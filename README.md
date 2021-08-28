@@ -22,5 +22,5 @@ The temperature analysis results shows that December temperature with a minimum 
 * June precipitation:
 ```jun_prcp = session.query(Measurement.date,Measurement.prcp).filter(extract('month', Measurement.date)==6).all()```
 * December percipitation:
-``` dec_prcp = session.query(Measurement.date,Measurement.tobs).filter(extract('month', Measurement.date)==6).all()```
+``` dec_prcp = session.query(Measurement.date,Measurement.prcp).filter(extract('month', Measurement.date)==12).all()```
 
